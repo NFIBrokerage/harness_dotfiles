@@ -5,7 +5,7 @@ defmodule HarnessDotfiles do
 
   @behaviour Harness.Pkg
 
-  defstruct coveralls_skip_files: ["^test", "^deps"],
+  defstruct coveralls_skip_files: ["^test", "^deps", "^.harness"],
             explicit_credo_checks: [],
             excluded_paths_for_modulename_matches_filename: [],
             asdf_elixir_version: "1.10.3-otp-21",
