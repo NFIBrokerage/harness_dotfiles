@@ -1,0 +1,7 @@
+/.credo.exs
+/.formatter.exs
+/.harness/
+/.tool-versions
+/_build/
+/deps/
+/coveralls.json

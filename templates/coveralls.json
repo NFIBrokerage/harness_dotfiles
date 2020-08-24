@@ -3,9 +3,5 @@
     "minimum_coverage": 100,
     "treat_no_relevant_lines_as_covered" : true
   },
-  "skip_files": [
-    "^test",
-    "^deps",
-    "^fixture"
-  ]
+  "skip_files": <%= Kernel.inspect(@coveralls_skip_files) %>
 }
