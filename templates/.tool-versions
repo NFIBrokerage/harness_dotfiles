@@ -1,0 +1,3 @@
+elixir <%= @asdf_elixir_version %>
+erlang <%= @asdf_erlang_version %>
+<%= @asdf_other_versions |> Enum.join("\n") %>
