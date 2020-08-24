@@ -18,8 +18,11 @@ defmodule HarnessDotfilesTest do
     assert MapSet.equal?(generated_files, links)
   end
 
-  test "the credo config can be read as valid elixir" do
+  test "the elixir configs can be read as valid elixir" do
     assert {%{}, []} = ".credo.exs" |> fixture() |> Code.eval_file()
+
+    assert {[{_k, _v} | _], _bindings} =
+             ".formatter.exs" |> fixture() |> Code.eval_file()
   end
 
   defp fixture(filename) do
