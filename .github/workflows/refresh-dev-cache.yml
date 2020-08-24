@@ -69,12 +69,16 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-${{ env.ELIXIR_VERSION }}-${{ env.OTP_VERSION }}-${{ env.MIX_ENV }}-build-
 
+    - name: Install harness
+      run: |
+        mix hex.organization auth cuatro --key $CUATRO_HEX_KEY
+        mix archive.install hex harness 0.0.1 --organization cuatro --force
+
     - name: Fetch mix dependencies
       if: steps.deps-cache.outputs.cache-hit != 'true'
       run: |
         mix local.rebar --force
         mix local.hex --force
-        mix hex.organization auth cuatro --key $CUATRO_HEX_KEY
         mix deps.get
 
     - name: Compile dependencies
