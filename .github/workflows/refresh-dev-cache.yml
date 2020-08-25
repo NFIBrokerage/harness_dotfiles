@@ -72,7 +72,7 @@ jobs:
     - name: Install harness
       run: |
         mix hex.organization auth cuatro --key $CUATRO_HEX_KEY
-        mix archive.install hex harness 0.0.1 --organization cuatro --force
+        mix archive.install hex harness --organization cuatro --force
 
     - name: Fetch mix dependencies
       if: steps.deps-cache.outputs.cache-hit != 'true'

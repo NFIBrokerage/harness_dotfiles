@@ -31,7 +31,7 @@ defmodule HarnessDotfiles.MixProject do
       source_url: "https://github.com/NFIBrokerage/harness_dotfiles",
       name: "HarnessDotfiles",
       docs: docs(),
-      archives: [harness: ">= 0.0.0"]
+      archives: [harness: "~> 0.1"]
     ]
   end
 
