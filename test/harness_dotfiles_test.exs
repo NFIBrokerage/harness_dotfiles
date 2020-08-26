@@ -25,6 +25,11 @@ defmodule HarnessDotfilesTest do
              ".formatter.exs" |> fixture() |> Code.eval_file()
   end
 
+  test "the json config can be read as valid json" do
+    assert {:ok, _json} =
+             "coveralls.json" |> fixture() |> File.read!() |> Jason.decode()
+  end
+
   defp fixture(filename) do
     Path.join("fixture", filename)
   end
