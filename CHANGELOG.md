@@ -6,6 +6,12 @@ The format is based on [Keep a
 Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 0.0.6 - 2020-12-22
+
+### Changed
+
+- The default elixir and erlang versions are now OTP23.2 and Elixir 1.11.2
+
 ## 0.0.5 - 2020-09-04
 
 ### Added

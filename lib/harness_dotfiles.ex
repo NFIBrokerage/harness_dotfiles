@@ -9,8 +9,8 @@ defmodule HarnessDotfiles do
             coveralls_minimum_coverage: 100,
             explicit_credo_checks: [],
             excluded_paths_for_modulename_matches_filename: [],
-            asdf_elixir_version: "1.10.4-otp-22",
-            asdf_erlang_version: "22.3",
+            asdf_elixir_version: "1.11.2-otp-23",
+            asdf_erlang_version: "23.2",
             asdf_other_versions: [],
             formatter_deps: [],
             formatter_locals_without_parens: []
