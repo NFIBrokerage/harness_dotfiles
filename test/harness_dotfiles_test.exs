@@ -6,8 +6,8 @@ defmodule HarnessDotfilesTest do
       [opts: []]
     end
 
-    test "casting the configuration produces the default struct", c do
-      assert HarnessDotfiles.cast(c.opts) === %HarnessDotfiles{}
+    test "casting the configuration produces a struct", c do
+      assert %HarnessDotfiles{} = HarnessDotfiles.cast(c.opts)
     end
   end
 

@@ -44,6 +44,7 @@ defmodule HarnessDotfiles.MixProject do
 
   defp deps do
     [
+      {:nimble_options, "~> 0.1"},
       # docs
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
       # test
