@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: harness_dotfiles
+  description: |
+    A harness package for common dotfile configuration
+  annotations:
+    github.com/project-slug: NFIBrokerage/harness_dotfiles
+    backstage.io/source-ref: https://github.com/NFIBrokerage/harness_dotfiles
+  tags:
+  - harness
+  - package
+  - dotfiles
+spec:
+  type: library
+  lifecycle: production
+  owner: team-baemax
+  system: service-chassis
