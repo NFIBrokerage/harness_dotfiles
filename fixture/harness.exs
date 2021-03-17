@@ -1,6 +1,7 @@
 import Config
 
 config :harness,
+  version: "~> 0.6",
   manifest_version: "2.0.0",
   generators: [HarnessDotfiles],
   deps: [

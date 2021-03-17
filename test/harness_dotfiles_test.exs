@@ -13,7 +13,12 @@ defmodule HarnessDotfilesTest do
 
   test "_all_ generated files are linked" do
     generated_files = File.ls!("templates") |> MapSet.new()
-    links = HarnessDotfiles.links(%HarnessDotfiles{}) |> MapSet.new()
+
+    links =
+      %HarnessDotfiles{}
+      |> HarnessDotfiles.links()
+      |> Enum.map(fn {file, _link_type} -> file end)
+      |> MapSet.new()
 
     assert MapSet.equal?(generated_files, links)
   end

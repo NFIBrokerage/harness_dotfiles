@@ -113,7 +113,7 @@ defmodule HarnessDotfiles do
       {".tool-versions", :hard},
       {".credo.exs", :sym},
       {".formatter.exs", :sym},
-      {"coveralls.json", :sym},
+      {"coveralls.json", :sym}
     ]
   end
 
