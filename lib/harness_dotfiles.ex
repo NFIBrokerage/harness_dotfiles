@@ -109,11 +109,11 @@ defmodule HarnessDotfiles do
   @doc false
   @impl Harness.Pkg
   def links(_config) do
-    ~w[
-      .credo.exs
-      .formatter.exs
-      .tool-versions
-      coveralls.json
+    [
+      {".tool-versions", :hard},
+      {".credo.exs", :sym},
+      {".formatter.exs", :sym},
+      {"coveralls.json", :sym},
     ]
   end
 
