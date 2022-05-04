@@ -58,7 +58,7 @@ defmodule HarnessDotfiles.MixProject do
     [
       name: "harness_dotfiles",
       files: ~w(lib .formatter.exs mix.exs README.md .version templates),
-      licenses: [],
+      licenses: ["0BSD"],
       organization: "cuatro",
       links: %{"GitHub" => "https://github.com/NFIBrokerage/harness_dotfiles"}
     ]
