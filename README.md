@@ -7,7 +7,7 @@
 
 ![Actions CI](https://github.com/NFIBrokerage/harness_dotfiles/workflows/Actions%20CI/badge.svg)
 
-A harness for a common collection of dotfiles
+A harness package for common dotfiles
 
 This is a deprecated harness package we used to use to store common dotfiles
 like ASDF's `.tool-versions` file and coveralls configuration. We ended up
