@@ -15,3 +15,14 @@ moving each of these configurations into more specific harness packages because
 we wanting to control Elixir/Erlang versions on a per package level instead of
 having "one blessed Elixir/Erlang combination to rule them all." This package
 may serve as a pretty minimalistic example of a package to get you going.
+
+The `lib/harness_dotfiles.ex` fulfills the `Harness.Pkg` behavior and serves
+as the entrypoint. The `templates/` directory contains the generated files in
+EEx format (despite not having a `.eex` extension). This package also has
+a `fixture/` that is checked in CI to make sure we don't break consumers of
+the package when pushing updates.
+
+As a bit of a side-note, we like using [NimbleOptions] with harness packages
+because it makes it easy to document and validate options.
+
+[NimbleOptions]: https://hexdocs.pm/nimble_options/NimbleOptions.html
